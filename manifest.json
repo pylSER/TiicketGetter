@@ -1,0 +1,17 @@
+{
+"name": "TicketGetter",
+"version" : "1.0",
+"manifest_version": 2,
+"description": "TicketGetter",
+
+"content_scripts": [
+                        {
+                        "matches": ["https://kyfw.12306.cn/otn/leftTicket/init"],
+                        "js": ["myjs.js"]
+                        },
+                    {
+                    "matches": ["https://kyfw.12306.cn/otn/confirmPassenger/initDc"],
+                    "js": ["myjs2.js"]
+                    }
+                ]
+}
